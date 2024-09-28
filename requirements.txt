@@ -1,0 +1,8 @@
+pymongo 
+streamlit
+pandas
+scikit-learn
+email-validator
+sendgrid
+bcrypt
+requests
