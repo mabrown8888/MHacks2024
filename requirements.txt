@@ -6,3 +6,4 @@ email-validator
 sendgrid
 bcrypt
 requests
+sentence-transformers
