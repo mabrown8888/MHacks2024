@@ -7,3 +7,4 @@ sendgrid
 bcrypt
 requests
 sentence-transformers
+streamlit_calendar
