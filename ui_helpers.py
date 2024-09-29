@@ -1,5 +1,6 @@
 import streamlit as st
 from authentication import signup_user, login_user
+# from streamlit_calendar import calendar
 
 def show_signup_form(users_collection):
     st.header("Sign Up")
@@ -52,7 +53,7 @@ def show_main_page(users_collection):
     # Add matching process using the `find_match` function
     if st.button("Find Someone to Talk to"):
         matched_user = find_match(users_collection)
-        if matched_user:
+        if not matched_user.empty:
             st.write(f"🎉 You have been matched with: **{matched_user['user_name']}**")
             st.write(f"They're feeling **{matched_user['mood']}** and worried about: **{matched_user['worries']}**")
 
